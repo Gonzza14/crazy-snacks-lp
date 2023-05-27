@@ -1,0 +1,12 @@
+.product-section{
+    background-image: url(../assets/img/backgrounds/product-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color: #736C4D;
+    position: relative;
+    display: grid;
+    align-items: center;
+}

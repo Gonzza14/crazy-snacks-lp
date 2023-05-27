@@ -1,0 +1,43 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.main-section{
+    background-image: url(../assets/img/backgrounds/main-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    align-items: center;
+    color: #736C4D;
+}
+
+.main-section-header{
+    margin: 1rem 0 1rem 5%;
+    max-width: 35%;
+    min-width: 30ch;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+
+}
+
+.main-section-header__title{
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.main-section-header__subtitle{
+    font-size: 1.75rem;
+}
+
+.main-section-header__button{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #736C4D;
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: 0.4s background-color;
+}

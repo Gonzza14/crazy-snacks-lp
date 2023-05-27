@@ -2,18 +2,19 @@
     box-sizing: border-box;
 }
 
-.hero{
-    background-image: url(../assets/img/backgrounds/main-background.png);
-    background-size: cover;
-    height: 100vh;
+body{
+    margin: 0;
 }
 
 .main-nav{
     --state-close: scale(0);
     --state-hamburguer: scale(1);
-    --state-menu: translateX(-100%);
+    --state-menu: translate(-100%);
 
-    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
@@ -22,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
+    background-color: transparent;
 }
 
 .main-nav:target{
@@ -31,7 +33,7 @@
 }
 
 .main-nav__link--logo{
-    z-index: 1;
+    z-index: 2;
 }
 
 .main-nav__logo{
@@ -42,8 +44,8 @@
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
-    background-color: #000;
-    position: absolute;
+    background-color: #F2D9BB;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -56,14 +58,15 @@
     padding-left: 5% ;
 
     transform: var(--state-menu);
-    transition: .3s transform;
+    z-index: 1;
 }
 
+
 .main-menu__link{
-    color: #fff;
+    color: #736C4D;
     text-decoration: none;
     font-size: 1.2rem;
-    letter-spacing: 2px;
+    
 }
 
 .main-nav__hamburguer,
@@ -72,6 +75,7 @@
     grid-column: -2/-1;
     grid-row: 1/2;
     transition: .4s transform;
+    z-index: 1;
 }
 
 .main-nav__hamburguer{
@@ -90,7 +94,7 @@
 @media (min-width: 768px){
     .main-nav{
         --state-hamburguer: scale(0);
-        --state-menu: translateX(0);
+        --state-menu: translate(0);
     }
     
     .main-nav:target{
@@ -107,4 +111,10 @@
         grid-column: -2/-1;
         grid-row: 1/2;
     }
+
+    .team-section-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+

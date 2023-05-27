@@ -1,0 +1,49 @@
+.team-section{
+    background-image: url(../assets/img/backgrounds/team-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    color: #736C4D;
+    position: relative;
+    left: 0;
+    display: grid;
+    align-items: center;
+}
+
+.team-section-header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-section-header__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-section-header__text{
+    font-size: 1rem;
+}
+
+.team-section-main{
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0 5%;
+}
+.team-section-main__perfil{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.team-section-main__photo{
+    width: 20em
+}
+
+@media (min-width: 1150px){
+    .team-section-main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
