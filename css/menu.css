@@ -4,6 +4,12 @@
 
 body{
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../assets/img/backgrounds/team-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .main-nav{
@@ -114,6 +120,84 @@ body{
 
     .team-section-main{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*.product-section{
+        height: 50vh;
+    }*/
+
+    .product-section-main__info{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 5em;
+    }
+
+    .product-section-main__info--par{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10em;
+    }
+
+    .product-section-main__title{
+        margin-bottom: 7em;
+        justify-self: start;
+        grid-column: 2/2;
+        grid-row: 1;
+        font-size: 3rem;
+    }
+
+    .product-section-main__title--par{
+        margin-bottom: 7em;
+        grid-column: 1/1;
+        justify-self: start;
+        grid-row: 1;
+        font-size: 3rem;
+    }
+
+    .product-section-main__text{
+        margin-bottom: 3em;
+        text-align: left;
+        justify-self: start;
+        grid-column: 2/2;
+        grid-row: 1;
+        font-size: 1.5rem;
+    }
+
+    .product-section-main__text--par{
+        margin-bottom: 3em;
+        text-align: left;
+        justify-self: start;
+        grid-column: 1/1;
+        grid-row: 1;
+        font-size: 1.5rem;
+    }
+
+    .product-section-main__button{
+        margin-top: 10em;
+        grid-column: 2/2;
+        padding: 0.5rem 1rem;
+        justify-self: start;
+        grid-row: 1;
+    }
+
+    .product-section-main__button--par{
+        margin-top: 10em;
+        justify-self: start;
+        grid-column: 1/1;
+        padding: 0.5rem 1rem;
+        grid-row: 1;
+    }
+
+
+    .product-section-main__img{
+        grid-column: 1/1;
+        grid-row: 1;
+        width: 30em;
+    }
+
+
+    .product-section-main__img--par{
+        grid-column: 2/2;
+        grid-row: 1;
+        width: 30em;
     }
 }
 
