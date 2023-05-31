@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/main-section.css">
     <link rel="stylesheet" href="css/team-section.css">
+    <link rel="stylesheet" href="css/strategy-section.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,10 +19,10 @@
         <nav class="main-nav" id="main-nav">
             <a class="main-nav__link--logo" href="index.html"><img class="main-nav__logo" src="assets/img/logos/logo.png" alt="Logo de Crazy Snacks"></a>
             <ul class="main-menu">
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Inicio</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Producto</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Equipo</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Estrategia</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#main-section">Inicio</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#product-section">Producto</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#team-section">Equipo</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#strategy-section">Estrategia</a></li>
                 <li class="main-menu__item"><a class="main-menu__link" href="#">Presupuesto</a></li>
             </ul>
 
@@ -30,14 +31,14 @@
         </nav>
     </header>
     <main class="main">
-        <section class="main-section">
+        <section class="main-section" id="main-section">
             <header class="main-section-header">
                 <h1 class="main-section-header__title">Crazy Snacks</h1>
                 <p class="main-section-header__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                 <a class="main-section-header__button" href="#">EMPECEMOS</a>
             </header>
         </section>
-        <section class="team-section">
+        <section class="team-section" id="team-section">
             <header class="team-section-header">
                 <h2 class="team-section-header__title">NUESTRO EQUIPO</h2>
                 <p class="team-section-header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
@@ -69,8 +70,12 @@
                 </div>
             </main>
         </section>
-        <section class="products-section">
-            <section class="product-section">
+        <section class="products-section" id="product-section">
+            <section class="product-section--header">
+                <header class="products-section-header">
+                    <h2 class="products-section-header__title">PRODUCTOS</h2>
+                    <p class="products-section-header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </header>
                 <main class="product-section-main">
                     <div class="product-section-main__info">
                         <h2 class="product-section-main__title">CRAZY VASO</h2>
@@ -112,13 +117,30 @@
             </section>
         </section>
         
-        <section class="strategy-section">
+        <section class="strategy-section" id="strategy-section">
+            <header class="strategy-section-header">
+                <h2 class="strategy-section-header__title">ESTRATEGIA</h2>
+                <p class="strategy-section-header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </header>
+            <main class="strategy-section-main">
+                <div class="strategy-section-main__circle">
+                    <p class="strategy-section-main__cantidad">7k</p>
+                    <p class="strategy-section-main__texto">Seguidores</p>
+                </div>
+                <div class="strategy-section-main__circle">
+                    <p class="strategy-section-main__cantidad">109</p>
+                    <p class="strategy-section-main__texto">Ventas</p>
+                </div>
+                <div class="strategy-section-main__circle">
+                    <p class="strategy-section-main__cantidad">35</p>
+                    <p class="strategy-section-main__texto">Alcanze</p>
+                </div>
+            </main>
+        </section>
+        <section class="package-section" id="package-section">
 
         </section>
-        <section class="package-section">
-
-        </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
         </section>
     </main>
     <footer>

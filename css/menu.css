@@ -199,6 +199,22 @@ body{
         grid-row: 1;
         width: 30em;
     }
+
+    .strategy-section{
+        align-content: space-evenly;
+    }
+
+    .product-section{
+        height: 100vh;
+    }
+
+    .products-section-header__title{
+        font-size: 3rem;
+    }
+
+    .products-section-header__text{
+        font-size: 1.5rem;
+    }
 }
 
 

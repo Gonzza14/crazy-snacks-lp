@@ -13,17 +13,17 @@
 }
 
 .team-section-header__title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .team-section-header__text{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .team-section-main{
     display: grid;
-    grid-gap: 1rem;
+    gap: 1rem;
     margin: 0 5%;
 }
 .team-section-main__perfil{
@@ -39,6 +39,10 @@
 
 @media (min-width: 1150px){
     .team-section-main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .strategy-section-main{
         grid-template-columns: repeat(3, 1fr);
     }
 }
