@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: 'HugMeTight';
+    src: local('HugMeTight'), url(../assets/fonts/Hug-Me-Tight-TTF.ttf);
+}
+
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -10,6 +15,11 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    font-family: HugMeTight;
+}
+
+.header{
+    background-color: #903F1C;
 }
 
 .main-nav{
@@ -17,16 +27,13 @@ body{
     --state-hamburguer: scale(1);
     --state-menu: translate(-100%);
 
-    position: absolute;
-    left: 0;
-    right: 0;
+    
     margin: auto;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     overflow: hidden;
     padding: 40px 0;
     display: grid;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
     background-color: transparent;
@@ -43,33 +50,31 @@ body{
 }
 
 .main-nav__logo{
-    width: 12em;
+    width: 10em;
 }
 
 .main-menu{
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
-    background-color: #F2D9BB;
-    position: relative;
+    background-color: #903F1C;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 0;
-
     display: grid;
     align-content: center;
     gap: 2em;
     padding-left: 5% ;
-
     transform: var(--state-menu);
     z-index: 1;
 }
 
 
 .main-menu__link{
-    color: #736C4D;
+    color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     
@@ -204,6 +209,20 @@ body{
         align-content: space-evenly;
     }
 
+    .strategy-section-main__circle{
+        width: 25em;
+        height: 25em;
+    }
+
+    .strategy-section-main__cantidad{
+        font-size: 10rem;
+;
+    }
+    
+    .strategy-section-main__texto{
+        font-size: 2rem;
+    }
+
     .product-section{
         height: 100vh;
     }
@@ -214,6 +233,43 @@ body{
 
     .products-section-header__text{
         font-size: 1.5rem;
+    }
+
+    .main-section-header__title{
+        font-size: 5rem;
+    }
+
+    .main-section-header__subtitle{
+        font-size: 1.5rem;
+    }
+    .main-nav__logo{
+        width: 14em;
+    }
+
+    .main-section-header{
+        min-width: 30ch;
+    }
+
+    .main-section-header__subtitle{
+        font-size: 1.5rem;
+    }
+
+    .team-section{
+        margin-bottom: 0;
+    }
+
+    .product-section--header{
+        align-content: space-evenly;
+    }
+}
+
+@media (min-width: 1150px){
+    .team-section-main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .strategy-section-main{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
