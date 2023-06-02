@@ -141,6 +141,7 @@ body{
         margin-left: 10em;
     }
 
+
     .product-section-main__title{
         margin-bottom: 7em;
         justify-self: start;
@@ -207,21 +208,9 @@ body{
 
     .strategy-section{
         align-content: space-evenly;
+        height: 100vh;
     }
 
-    .strategy-section-main__circle{
-        width: 25em;
-        height: 25em;
-    }
-
-    .strategy-section-main__cantidad{
-        font-size: 10rem;
-;
-    }
-    
-    .strategy-section-main__texto{
-        font-size: 2rem;
-    }
 
     .product-section{
         height: 100vh;
@@ -261,6 +250,47 @@ body{
     .product-section--header{
         align-content: space-evenly;
     }
+
+    .package-section-main{
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+
+    .package-section{
+        height: 100vh;
+    }
+
+    .strategy-section-main__circle{
+        width: 22em;
+        height: 22em;
+    }
+
+    .strategy-section-main__cantidad{
+        font-size: 8rem;
+    }
+    
+    .strategy-section-main__texto{
+        font-size: 1.8rem;
+    }
+
+    .strategy-section-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .package-section-main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .alcanze{
+        grid-area: 2 / 1 / 2 / 4;
+    }
+
+
+    .paquete-tres{
+        grid-area: 2 / 1 / 2 / 4;
+        width: 50%;
+    }
+
 }
 
 @media (min-width: 1150px){
@@ -271,6 +301,53 @@ body{
     .strategy-section-main{
         grid-template-columns: repeat(3, 1fr);
     }
+
+
+    .package-section-main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .package-section-main__card{
+        width: 80%;
+    }
+
+    .strategy-section-main__circle{
+        width: 22em;
+        height: 22em;
+    }
+
+    .strategy-section-main__cantidad{
+        font-size: 8rem;
+    }
+    
+    .strategy-section-main__texto{
+        font-size: 2rem;
+    }
+
+    .alcanze{
+        grid-area: unset;
+    }
+
+    .paquete-tres{
+        grid-area: unset;
+    }
+}
+
+@media (min-width: 1413px){
+
+    .strategy-section-main__circle{
+        width: 25em;
+        height: 25em;
+    }
+
+    .strategy-section-main__cantidad{
+        font-size: 10rem;
+    }
+    
+    .strategy-section-main__texto{
+        font-size: 2rem;
+    }
+
 }
 
 
