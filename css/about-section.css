@@ -1,0 +1,97 @@
+.about-section{
+    width: 100%;
+    height: 100%;
+    color: #903F1C;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.about-section-header{
+    text-align: center;
+}
+
+.about-section-header__title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section-main{
+    display: grid;
+    gap: 1rem;
+    margin: 0 5%;
+    justify-items: center;
+    align-items: center;;
+}
+
+.about-section-main__about {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+.carrousel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: #ececec;
+    box-shadow: 1em 1em 2em #c9c9c9, -1em -1em 2em  #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+  }
+  
+  .carrousel .grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color:  #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: #ececec;
+    box-shadow: 1em 1em 2em  #c9c9c9, -1em -1em 2em  #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+
+  .carrousel .about-section-main__about {
+    width: calc( 100% / 2 - 2em);
+    min-height: 10vh;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color:#ececec;
+    box-shadow: 1em 1em 2em #c9c9c9, -1em -1em 2em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color:  #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color:  #393939;
+    box-shadow: 0.6em 0.6em 1.2em #c9c9c9, -0.6em -0.6em 1.2em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .punto.activo {
+    background-color: lightblue;
+  }

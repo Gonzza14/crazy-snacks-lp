@@ -260,6 +260,10 @@ body{
         height: 100vh;
     }
 
+    .about-section{
+        height: 100vh;
+    }
+
     .strategy-section-main__circle{
         width: 22em;
         height: 22em;
